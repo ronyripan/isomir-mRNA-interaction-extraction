@@ -1,0 +1,4 @@
+mrna command:  blastn -task blastn -db mrna/gencode.v46.pc_transcripts -query queries/SRR959752.fasta -evalue 0.1 -outfmt "10 qaccver qlen saccver slen qstart qend sstart send qseq sseq evalue bitscore length sstrand gapopen" -num_threads 8 > SRR959752/mrna_res
+
+mirna command: blastn -task blastn -db mirna/mirbase -query queries/SRR959752.fasta -evalue 0.1 -outfmt "10 qaccver qlen saccver slen qstart qend sstart send qseq sseq evalue bitscore length sstrand gapopen mismatch" -num_threads 8 > SRR959752/mirna_res
+
